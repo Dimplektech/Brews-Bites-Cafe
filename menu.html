@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Brews & Bites Cafe</title>
+    <link rel="stylesheet" href="css\styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>Brews & Bites</h1>
+                </a>
+            </div>
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html" class="active">Menu</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="menu-hero">
+            <div class="container">
+                <h2>Our Menu</h2>
+                <p>Quality ingredients, crafted with care</p>
+            </div>
+        </section>
+
+        <section class="menu-nav">
+            <div class="container">
+                <ul class="menu-tabs">
+                    <li><a href="#coffee" class="active">Coffee</a></li>
+                    <li><a href="#tea">Tea</a></li>
+                    <li><a href="#pastries">Pastries</a></li>
+                    <li><a href="#sandwiches">Sandwiches</a></li>
+                    <li><a href="#desserts">Desserts</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="coffee" class="menu-section">
+            <div class="container">
+                <h3>Coffee</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Espresso</h4>
+                            <p>Our signature blend, rich and aromatic</p>
+                        </div>
+                        <div class="menu-item-price">
+                            <span>$3.50</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Cappuccino</h4>
+                            <p>Equal parts espresso, steamed milk, and foam</p>
+                        </div>
+                        <div class="menu-item-price">
+                            <span>$4.25</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Latte</h4>
+                            <p>Espresso with steamed milk and a light layer of foam</p>
+                        </div>
+                        <div class="menu-item-price">
+                            <span>$4.50</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Mocha</h4>
+                            <p>Espresso with chocolate, steamed milk, and whipped cream</p>
+                        </div>
+                        <div class="menu-item-price">
+                            <span>$4.75</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Cold Brew</h4>
+                            <p>Slow-steeped for 12 hours for a smooth, rich flavor</p>
+                        </div>
+                        <div class="menu-item-price">
+                            <span>$4.50</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tea" class="menu-section">
+            <div class="container">
+                <h3>Tea</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Earl Grey</h4>
+                            <p>Black tea infused with bergamot oil</p>
+                        </div>
+                        <div class="menu-item-price">
+                            <span>$3.25</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Green Tea</h4>
+                            <p>Delicate Japanese green tea leaves</p>
+                        </div>
+                        <div class="menu-item-price">
+                            <span>$3.25</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Chai Latte</h4>
+                            <p>Spiced black tea with steamed milk</p>
+                        </div>
+                        <div class="menu-item-price">
+                            <span>$4.25</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Chamomile</h4>
+                            <p>Soothing herbal tea with honey</p>
+                        </div>
+                        <div class="menu-item-price">
+                            <span>$3.00</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pastries" class="menu-section">
+            <div class="container">
+                <h3>Pastries</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Croissant</h4>
+                            <p>Buttery, flaky French pastry</p>
+                        </div>
+                        <div class="menu-item-price">
+                            <span>$3.25</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Blueberry Muffin</h4>
+                            <p>Moist muffin packed with fresh blueberries</p>
+                        </div>
+                        <div class="menu-item-price">
+                            <span>$3.50</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Cinnamon Roll</h4>
+                            <p>Warm roll with cinnamon swirl and cream cheese frosting</p>
+                        </div>
+                        <div class="menu-item-price">
+                            <span>$4.00</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Scone</h4>
+                            <p>Traditional scone with seasonal berries</p>
+                        </div>
+                        <div class="menu-item-price">
+                            <span>$3.75</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sandwiches" class="menu-section">
+            <div class="container">
+                <h3>Sandwiches</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Avocado Toast</h4>
+                            <p>Whole grain toast with smashed avocado, sea salt, and red pepper flakes</p>
+                        </div>
+                        <div class="menu-item-price">
+                            <span>$7.50</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Turkey & Brie</h4>
+                            <p>Roasted turkey, brie, and cranberry spread on a baguette</p>
+                        </div>
+                        <div class="menu-item-price">
+                            <span>$8.95</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Caprese Panini</h4>
+                            <p>Fresh mozzarella, tomato, basil, and balsamic glaze</p>
+                        </div>
+                        <div class="menu-item-price">
+                            <span>$8.50</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Chicken Pesto Wrap</h4>
+                            <p>Grilled chicken, pesto, roasted red peppers, and spinach in a whole wheat wrap</p>
+                        </div>
+                        <div class="menu-item-price">
+                            <span>$9.25</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="desserts" class="menu-section">
+            <div class="container">
+                <h3>Desserts</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Chocolate Chip Cookie</h4>
+                            <p>Warm cookie with melty chocolate chunks</p>
+                        </div>
+                        <div class="menu-item-price">
+                            <span>$2.75</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>New York Cheesecake</h4>
+                            <p>Creamy cheesecake with graham cracker crust</p>
+                        </div>
+                        <div class="menu-item-price">
+                            <span>$5.50</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Tiramisu</h4>
+                            <p>Italian dessert with coffee-soaked ladyfingers and mascarpone</p>
+                        </div>
+                        <div class="menu-item-price">
+                            <span>$5.95</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Seasonal Fruit Tart</h4>
+                            <p>Buttery tart shell filled with pastry cream and fresh seasonal fruit</p>
+                        </div>
+                        <div class="menu-item-price">
+                            <span>$6.25</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Brews & Bites Cafe</h3>
+                    <p>Your cozy spot for great coffee and delicious food.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Hours</h3>
+                    <p>Monday - Friday: 7am - 8pm</p>
+                    <p>Weekends: 8am - 9pm</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>123 Coffee Lane</p>
+                    <p>Foodville, FV 98765</p>
+                    <p>Phone: (555) 123-4567</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Brews & Bites Cafe. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
