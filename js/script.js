@@ -10,8 +10,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Add to your existing script.js file
-// filepath: c:\vscode-projects\Brews-Bites-Cafe\script.js
+
+// Smooth scroll for anchor links
 // Menu tab navigation
 document.addEventListener('DOMContentLoaded', function() {
     const menuLinks = document.querySelectorAll('.menu-tabs a');
