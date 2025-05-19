@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 cartCountElement.style.display = 'none';
             }
         }
-    }
+      }
 
     // Initialize cart count on page load
     updateCartCount();

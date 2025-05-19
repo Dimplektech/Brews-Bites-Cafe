@@ -10,6 +10,14 @@ body {
     line-height: 1.6;
     color: #333;
 }
+.logo img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    vertical-align: middle;
+    margin-right: 10px;
+}
 
 .container {
     max-width: 1200px;
@@ -99,7 +107,7 @@ nav ul li a:hover, nav ul li a.active {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/cafe-hero.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/cafe-hero.jpg');
     background-size: cover;
     background-position: center;
     color: white;
@@ -134,6 +142,24 @@ nav ul li a:hover, nav ul li a.active {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
 }
+/* Featured explore button styles */
+.explore-btn {
+    display: inline-block;  /* Change from block to inline-block */
+    background-color: #5D4037;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 4px;
+    margin: 12px auto 0 auto;
+    text-decoration: none;
+    font-size: 13px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    min-width: 80px;
+    max-width: 120px;  /* Add a maximum width */
+}
+.explore-btn:hover {
+    background-color: #8D6E63;
+}
 
 .item {
     background: white;
@@ -141,6 +167,7 @@ nav ul li a:hover, nav ul li a.active {
     overflow: hidden;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    text-align: center;
 }
 
 .item:hover {
@@ -264,7 +291,7 @@ footer {
 
 /* Menu Page Styles */
 .menu-hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/menu-hero.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/menu-hero.jpg');
     background-size: cover;
     background-position: center;
     color: white;

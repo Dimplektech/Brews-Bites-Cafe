@@ -26,8 +26,8 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="menu.html">Menu</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    
+                    <li><a href="index.html#contact">Contact</a></li>
                     <li><a href="cart.html" class="active cart-icon"><i class="fas fa-shopping-cart"></i> Cart<span class="cart-count">0</span></a></li>
                 </ul>
             </nav>
@@ -37,7 +37,7 @@
     <main>
         <section class="cart-section">
             <div class="container">
-                <h2>Your Cart</h2>
+                
                 <div id="cart-items">
                     <!-- Cart items will be dynamically added here -->
                 </div>
@@ -71,15 +71,15 @@
                     <form id="payment-form">
                         <div class="form-group">
                             <label for="name">Full Name</label>
-                            <input type="text" id="name" required>
+                            <input type="text" id="name" name="name" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" id="email" required>
+                            <input type="email" id="email" name="email" required>
                         </div>
                         <div class="form-group">
                             <label for="phone">Phone</label>
-                            <input type="tel" id="phone" required>
+                            <input type="tel" id="phone" name="phone" required>
                         </div>
                         <div class="form-group">
                             <label for="card-number">Card Number</label>
@@ -106,12 +106,20 @@
                         <p id="receipt-date"></p>
                         <p id="receipt-number"></p>
                     </div>
-                    
+                    <div class="customer-details">
+                        <h3>Customer Information</h3>
+                        <p><strong>Name:</strong> <span id="receipt-customer-name"></span></p>
+                        <p><strong>Email:</strong> <span id="receipt-customer-email"></span></p>
+                        
+                        <p><strong>Phone:</strong> <span id="receipt-customer-phone"></span></p>
+                    </div>
+                    <br>
+                    <br>
                     <div id="receipt-items">
                         <!-- Receipt items will be added here -->
                     </div>
                     
-                    <div class="receipt-total">
+                    <div class="receipt-total receipt-footer">
                         <div class="summary-row">
                             <span>Subtotal:</span>
                             <span id="receipt-subtotal">£0.00</span>
