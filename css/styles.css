@@ -932,6 +932,71 @@ footer {
     text-decoration: underline;
 }
 
+/* Menu Search Styles */
+.menu-search {
+    padding: 20px 0;
+    background-color: #f9f9f9;
+}
+
+.search-container {
+    display: flex;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#menu-search-input {
+    flex: 1;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+#search-button {
+    background-color: #5D4037;
+    color: white;
+    border: none;
+    padding: 0 20px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#search-button:hover {
+    background-color: #8D6E63;
+}
+
+#search-results {
+    margin-top: 30px;
+}
+
+#search-results.hidden {
+    display: none;
+}
+
+#clear-search {
+    margin: 20px auto;
+    display: block;
+    background-color: #5D4037;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#clear-search:hover {
+    background-color: #8D6E63;
+}
+
+.no-results {
+    text-align: center;
+    padding: 30px;
+    font-style: italic;
+    color: #777;
+}
+
 /* Responsive Styles for Cart Page */
 @media (max-width: 768px) {
     .cart-item {

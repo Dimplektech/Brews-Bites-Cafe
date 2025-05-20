@@ -46,6 +46,7 @@
                 <p>Quality ingredients, crafted with care</p>
             </div>
         </section>
+        
 
         <section class="menu-nav">
             <div class="container">
@@ -55,7 +56,23 @@
                     <li><a href="#pastries">Pastries</a></li>
                     <li><a href="#sandwiches">Sandwiches</a></li>
                     <li><a href="#desserts">Desserts</a></li>
-                </ul>
+                    <li><div class="container">
+                <div class="search-container">
+                <input type="text" placeholder="Search for your favorite item..." id="menu-search-input">
+                <button id="search-button"><i class="fas fa-search"></i></button>
+            </div>
+           </li>
+            </ul>
+            </div>
+        </section>
+        <section class="menu-search">
+             <div id ="search-results" class="search-results">
+                <h3>Search Results</h3>
+                <div class="menu-items" id="search-results-items">
+                    <!-- Search results will be dynamically inserted here -->
+                </div>
+                <button id=""clear-search" class="btn">Back to Menu</button>
+            </div>
             </div>
         </section>
 
@@ -430,5 +447,6 @@
 
     <script src="js/script.js"></script>
     <script src="js/cart.js"></script>
+    <script src="js/search.js"></script>
 </body>
 </html>
