@@ -110,7 +110,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Initialize cart count on page load
     updateCartCount();
+    // Make it globally accessible
+    window.addToCart = addToCart;
 
+    // Make updateCartCount globally accessible
+    window.updateCartCount = updateCartCount;  
 
 });
 
