@@ -119,6 +119,10 @@ header .container {
     color:var(--primary-color);
 }
 
+nav{
+    margin-left: auto;
+}
+
 nav ul {
     display: flex;
 }
@@ -340,13 +344,14 @@ footer {
     background-color: var(--background-color);
 }
 .menu-hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/menu-hero.jpg');
+   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/menu-hero.jpg');
     background-size: cover;
     background-position: center;
     color: white;
     text-align: center;
     padding: 80px 20px;
 }
+
 
 .menu-hero h2 {
     
@@ -401,13 +406,21 @@ footer {
     font-size: 28px;
 }
 
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 25px;
+}
+
 .menu-item {
     display: flex;
-    flex-direction: row;
-    margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
     padding: 15px;
+    background-color: var(--secondary-color);
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease;
 }
 
@@ -441,6 +454,37 @@ footer {
     display: flex;
     justify-content: space-between;
 }
+/* ------------ */
+
+
+.menu-item-info {
+    flex: 1;
+}
+
+.menu-item-info h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color:var(--text-color);
+}
+
+.menu-item-info p {
+    color: --menu-item-info;
+    font-size: 14px;
+}
+
+.menu-item-price {
+    display: flex;
+    align-items: center;
+}
+
+.menu-item-price span {
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--primary-color);
+    margin-right: 15px;
+}
+/* ------------------------------------------------ */
+
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
@@ -523,118 +567,7 @@ footer {
         margin-top: 15px;
     }
 }
-
-
-/* Menu Page Styles */
-.menu-hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/menu-hero.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: center;
-    padding: 80px 20px;
-}
-
-.menu-hero h2 {
-    font-size: 36px;
-    margin-bottom: 15px;
-}
-
-.menu-nav {
-    background-color: var(--menu-nav-bar);
-    padding: 15px 0;
-    position: sticky;
-    top: 80px;
-    z-index: 90;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.menu-tabs {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.menu-tabs li {
-    margin: 5px 10px;
-}
-
-.menu-tabs a {
-    padding: 8px 15px;
-    border-radius: 20px;
-    transition: all 0.3s ease;
-    font-weight: 500;
-}
-
-.menu-tabs a:hover, .menu-tabs a.active {
-    background-color: var(--primary-color);
-    color:var(--secondary-color);
-}
-
-.menu-section {
-    padding: 60px 0;
-    border-bottom: 1px solid #eaeaea;
-}
-
-.menu-section:last-child {
-    border-bottom: none;
-}
-
-.menu-section h3 {
-    text-align: center;
-    color: var(--primary-color);
-    margin-bottom: 30px;
-    font-size: 28px;
-}
-
-.menu-items {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-    gap: 25px;
-}
-
-.menu-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    background-color: var(--secondary-color);
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease;
-}
-
-.menu-item:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.menu-item-info {
-    flex: 1;
-}
-
-.menu-item-info h4 {
-    font-size: 18px;
-    margin-bottom: 5px;
-    color:var(--text-color);
-}
-
-.menu-item-info p {
-    color: --menu-item-info;
-    font-size: 14px;
-}
-
-.menu-item-price {
-    display: flex;
-    align-items: center;
-}
-
-.menu-item-price span {
-    font-weight: 600;
-    font-size: 18px;
-    color: var(--primary-color);
-    margin-right: 15px;
-}
+    /* add-to-cart confirmation message: */
 
 .add-to-cart {
     background-color: var(--primary-color);
@@ -1055,6 +988,7 @@ footer {
 .theme-toggle {
     display: flex;
     align-items: center;
+    margin-left: 15px;
 }
 
 #theme-toggle-btn {
