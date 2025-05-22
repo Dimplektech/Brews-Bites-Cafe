@@ -15,7 +15,7 @@
                 <div class="logo">
                     <a href="index.html">
                         <h1>
-                            <i class="fas fa-coffee" style="color: rgb(44, 13, 13);"></i>
+                            <img src="images/logo-image-new.jpg" alt="Cafe Logo" style="height: 40px; vertical-align: middle;">
                             Brews & Bites
                         </h1>
                     </a>
@@ -33,13 +33,19 @@
                     <li><a href="cart.html" class="cart-icon">
                         <i class="fas fa-shopping-cart"></i> Cart
                         <span class="cart-count">0</span>
-                    </a></li>
+                    </a>
+                    </li>
+                    <li class="theme-toggle">
+                        <button id="theme-toggle-btn" aria-label="Toggle dark mode">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main>
+    <main id="menu-page">
         <section class="menu-hero">
             <div class="container">
                 <h2>Our Menu</h2>
@@ -450,5 +456,6 @@
     <script src="js/script.js"></script>
     <script src="js/cart.js"></script>
     <script src="js/search.js"></script>
+    <script src="js/theme-toggle.js"></script>
 </body>
 </html>
