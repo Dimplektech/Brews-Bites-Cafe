@@ -255,13 +255,13 @@ document.addEventListener('DOMContentLoaded',function(){
             return [
                 { 
                     name: 'Mocha', 
-                    image: 'images/special-coffee.jpg',
+                    image: 'images/coffee/cafe-mocha.jpg',
                     description: 'A rich mocha to enjoy any time of day.'
 
                 },
                 { 
                     name: 'Green Tea', 
-                    image: 'images/pastry.jpg',
+                    image: 'images/tea/green-tea.jpg',
                     description: 'A soothing green tea to refresh you.'
                 }
             ];
