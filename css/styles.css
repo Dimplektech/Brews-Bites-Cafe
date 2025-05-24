@@ -1018,6 +1018,113 @@ footer {
     color: #7f8c8d; /* Gray-blue moon color */
 }
 
+/* Weather Suggestion Styles */
+.weather-suggestions {
+    padding: 50px 0;
+    background-color: var(--background-color);
+    text-align: center;
+}
+
+.weather-suggestions h2 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.weather-suggestions > p {
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+.suggestion-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.weather-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.weather-icon {
+    font-size: 2.5rem;
+    margin-right: 20px;
+    color: var(--primary-color);
+}
+
+.weather-details h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.suggestion-title {
+    margin-bottom: 20px;
+}
+
+.suggestion-items {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.suggestion-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.suggestion-item:hover {
+    transform: translateY(-5px);
+}
+
+.suggestion-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.suggestion-item span {
+    font-weight: 800;
+    color: var(--primary-color);
+}
+
+.loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.loading i {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .weather-info {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .weather-icon {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+
 /* Responsive Styles for Cart Page */
 @media (max-width: 768px) {
     .cart-item {

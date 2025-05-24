@@ -7,8 +7,7 @@
     <meta name="keywords" content="Cafe, Coffee, Pastries, Sandwiches, Food">
     <meta name="author" content="Brews & Bites Cafe">
     <title>Brews & Bites Cafe</title>
-   
-    
+      
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="css\styles.css">
 </head>
@@ -64,6 +63,18 @@
                 <a href="menu.html" class="btn">Explore Menu</a>
             </div>
         </section>
+        <section class="weather-suggestions">
+             <div class="container">
+                <h2>Personalized Drink Suggestions</h2>
+                <p>Based on your local weather conditions</p>
+                <div id="weather-suggestion" class="suggestion-container">
+                <div class="loading">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p>Loading personalized recommendations...</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
         <section class="featured">
             <div class="container">
@@ -126,8 +137,10 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/weather.js"></script>
     <script src="js/cart.js"></script>
     <script src="js/theme-toggle.js"></script>
+    
     
 </body>
 </html>
